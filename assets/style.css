@@ -83,14 +83,20 @@ body {
 }
 .result {
     display: none;
+    text-align: center;
+    background: #141416;
+    border-radius: 16px;
+    padding: 10px;
+}
+p {
+    margin-bottom: 5px;
 }
 #name {
-    color: blue;
-}
-.results {
-    display: none
+    font-weight: bold;
+    color: #245cff;
 }
 #omikujiText {
+    font-weight: bold;
     color: green;
 }
 
