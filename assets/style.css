@@ -1,14 +1,17 @@
+* {
+    outline: none;
+    margin: 0;
+}
 html,
 body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    
 }
 
 .main {
-    background: #212121;
+    background: #18191c;
     height: 100%;
     padding: 0;
     margin: 0;
@@ -21,25 +24,80 @@ body {
     justify-content: center;
 }
 .container {
-    background: #424242;
+    background: #1e1f24;
     width: auto;
     border-radius: 16px;
 }
-.flex-item {
+.flexItem {
     padding: 5px;
-    width: 40em;
-    height: 250px;
+    width: auto;
+    height: auto;
+    border-radius: inherit;
+    -webkit-transition: all .25s ease;
     margin: 10px;
     color: white;
+    
 }
-img {
-    height: 100px;
+.welcome {
+    display: table;
+    margin: 0 auto;
+    align-items: center;
 }
-
+.nameContent {
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+}
+.nameField {
+    border: 2px solid transparent;
+    background: #141416;
+    color: #fff;
+    border-radius: inherit;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+    padding: 7px 13px 7px 10px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.nameField:focus {
+    background: #0f0f12;
+}
+.sendButton {
+    padding: 7px 13px 7px 13px;
+    border-radius: 10px;
+    background: rgb(36 92 255 / 0.36);
+    border: none;
+    -webkit-transition: all .25s ease;
+    color: #fff;
+}
+.sendButton:hover {
+    background: rgb(36 92 255);
+}
+.show {
+    display: block !important;
+}
+.nameContent {
+    display: none;
+}
+.feedback {
+    color: rgb(193 14 14);
+    border-radius: 12px;
+    background: rgb(193 14 14 / 23%);
+    padding: 20px;
+    text-align: center;
+    margin: 10px 0 10px 0;
+    display: none;
+}
 #name {
     color: blue;
 }
-
+.results {
+    display: none
+}
 #result {
     color: green;
+}
+
+img {
+    height: 100px;
 }

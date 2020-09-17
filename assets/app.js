@@ -21,3 +21,33 @@
 //   userresult = "凶";
 // }
 // document.getElementById("result").innerHTML = userresult;
+
+(function() {
+    // Selecting the input element
+    const form = document.querySelector('.nameForm')
+    //Set up Submit Button
+    form.addEventListener('submit', function(e){
+        // prevent the form's default submission action
+        e.preventDefault()
+        //Get user's input from from
+        const userName = document.querySelector('.nameField')
+        const feedback = document.querySelector('.feedback')
+        const welcomeName = document.querySelector('.nameContent')
+        const displayName = document.querySelector('#name')
+    
+        if (userName.value === ''){
+            feedback.classList.add('show')
+            setTimeout(function(){
+            feedback.classList.remove('show')
+            }, 2000)
+            if (displayName.value != '') {
+                welcomeName.classList.remove('show')
+            }
+        } else {
+            //Change message content and clear the message input
+            welcomeName.classList.add('show')
+            displayName.textContent = userName.value
+            userName.value = ''
+        }
+    })
+    })()
