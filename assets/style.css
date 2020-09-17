@@ -43,10 +43,6 @@ body {
     margin: 0 auto;
     align-items: center;
 }
-.nameContent {
-    -webkit-transition: all .25s ease;
-    transition: all .25s ease;
-}
 .nameField {
     border: 2px solid transparent;
     background: #141416;
@@ -76,9 +72,6 @@ body {
 .show {
     display: block !important;
 }
-.nameContent {
-    display: none;
-}
 .feedback {
     color: rgb(193 14 14);
     border-radius: 12px;
@@ -88,13 +81,16 @@ body {
     margin: 10px 0 10px 0;
     display: none;
 }
+.result {
+    display: none;
+}
 #name {
     color: blue;
 }
 .results {
     display: none
 }
-#result {
+#omikujiText {
     color: green;
 }
 
